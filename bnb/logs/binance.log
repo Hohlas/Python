@@ -1,0 +1,744 @@
+2018-06-14 08:43:54,097 [DEBUG] 
+    START
+    Текущее время: 2018-06-14 08:43:50  ~1528955030
+    Время сервера: 2018-06-14 08:43:55  ~1528955035
+    Разница: 5.00000000 
+    Бот будет работать, как будто сейчас: 2018-06-14 08:43:55 1528955035
+
+2018-06-14 08:43:54,115 [DEBUG] Получаем все неисполненные ордера по БД
+2018-06-14 08:43:54,117 [DEBUG] Получены неисполненные ордера из БД: ['13497269']
+2018-06-14 08:43:55,662 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-06-14 08:43:56,434 [DEBUG] https://api.binance.com:443 "GET /api/v3/order?symbol=CNDBTC&orderId=13497269&timestamp=1528955038000&signature=e8d4c304ee6395be90dc0ce2ad87c605ef8b37be4f7277575fd5e6987fd27fa3 HTTP/1.1" 200 None
+2018-06-14 08:43:56,456 [DEBUG] Ордер 13497269 на продажу исполнен
+2018-06-14 08:43:56,473 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-06-14 08:43:56,476 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-06-14 08:43:56,478 [DEBUG] Работаем с парой ETHBTC
+2018-06-14 08:43:57,997 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-06-14 08:43:58,840 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1528955040000&signature=3a5d4e0f4b95cedf5dd244500d977fcd8d8ea53a8ae1d8d2ab3ef6855608e458 HTTP/1.1" 200 None
+2018-06-14 08:43:58,864 [DEBUG] Баланс ['BTC:0.10213532', 'ETH:0.00000000']
+2018-07-09 12:56:02,296 [DEBUG] 
+    START
+    Текущее время: 2018-07-09 12:55:59  ~1531130159
+    Время сервера: 2018-07-09 12:56:09  ~1531130169
+    Разница: 10.00000000 
+    Бот будет работать, как будто сейчас: 2018-07-09 12:56:09 1531130169
+
+2018-07-09 12:56:02,312 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:02,313 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:02,314 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:02,316 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:02,317 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:03,840 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:04,488 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130171000&signature=a4459797359b22f1924dd01df5d18a604f72ee75c98a204a2957f591530ab8a8 HTTP/1.1" 401 None
+2018-07-09 12:56:04,595 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:04,600 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:04,601 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:04,602 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:04,604 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:04,605 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:06,155 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:06,987 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130173000&signature=4acb232403836c2c67be41357ac5c30248ed328391687972193b1833a14be1fe HTTP/1.1" 401 None
+2018-07-09 12:56:07,005 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:07,012 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:07,015 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:07,018 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:07,022 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:07,024 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:08,560 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:09,246 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130176000&signature=9c2a37e7deb94824cc495622cd09234a6ee4f4ec6b07402f2fcc29fa5e106236 HTTP/1.1" 401 None
+2018-07-09 12:56:09,270 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:09,278 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:09,280 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:09,284 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:09,288 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:09,290 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:10,826 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:11,581 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130178000&signature=873493957f35505259031a8d93967e3eaf6aebadc2d0945374ba2268d4ac8a1d HTTP/1.1" 401 None
+2018-07-09 12:56:11,605 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:11,615 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:11,617 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:11,620 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:11,622 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:11,624 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:13,172 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:13,853 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130180000&signature=0ef20258d4d66c6eed5bcfd858fc827349be1c77909d0115c8d9f343981213f3 HTTP/1.1" 401 None
+2018-07-09 12:56:13,863 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:13,869 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:13,871 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:13,873 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:13,875 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:13,877 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:15,391 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:16,255 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130182000&signature=1d7f41e9c729adccad1b707274a068bb8d00a34ff139bdc37bab00f8af8622ca HTTP/1.1" 401 None
+2018-07-09 12:56:16,279 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:16,293 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:16,295 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:16,297 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:16,300 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:16,302 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:17,824 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:19,145 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130185000&signature=efa4813a1163907c2b8e20cf5291bbef53de2a3fa12611ec7374d96311e8d81f HTTP/1.1" 401 None
+2018-07-09 12:56:19,168 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:19,176 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:19,179 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:19,181 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:19,185 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:19,187 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:20,733 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:21,465 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130188000&signature=ba43a2bc0ed5f56ab32a86ddb191925f91744e272f6a794faaf5cc6ff5c8e7b1 HTTP/1.1" 401 None
+2018-07-09 12:56:21,489 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:21,502 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:21,507 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:21,511 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:21,514 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:21,517 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:23,034 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:24,221 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130190000&signature=6db8c0153a4851a006382f2c3c2beef103f7195a8620a552b93651545fbfcf1d HTTP/1.1" 401 None
+2018-07-09 12:56:24,243 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:24,252 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:24,255 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:24,258 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:24,260 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:24,263 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:25,817 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:26,552 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130193000&signature=04782dfb4a401c221b30e49c5a132b1ed66e8ee1bd6b3c290760745cb2f87ac2 HTTP/1.1" 401 None
+2018-07-09 12:56:26,563 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:26,570 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:26,572 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:26,574 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:26,576 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:26,578 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:28,121 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:28,864 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130195000&signature=9ad3299b22eec81391aac39cd39c3b9900d2dc0464c5b10f1ddcb9324e4790f0 HTTP/1.1" 401 None
+2018-07-09 12:56:28,888 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:28,898 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:28,901 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:28,903 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:28,907 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:28,909 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:30,451 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:31,120 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130197000&signature=de300663eea8bbc959f0305f1ebb1ed2017d2cc8b150701dd2a54adf2846ea1e HTTP/1.1" 401 None
+2018-07-09 12:56:31,137 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:31,142 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:31,144 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:31,148 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:31,150 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:31,151 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:32,668 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:33,356 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130200000&signature=f1038fc0573489fd7b8bbdcea6f07cc9aed81a160aaa6d34a20652d8836938a1 HTTP/1.1" 401 None
+2018-07-09 12:56:33,364 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:33,368 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:33,370 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:33,372 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:33,374 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:33,376 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:34,923 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:35,628 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130202000&signature=28831da5b902e015b7931affe94c76db3a28a320e4787588b9aace671d461aee HTTP/1.1" 401 None
+2018-07-09 12:56:35,639 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:35,643 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:35,645 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:35,646 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:35,648 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:35,649 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:37,185 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:37,864 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130204000&signature=c2f0e2a0a0def0546093ee76e82f2b13fd47d6f86293e266dc59331e126eeb00 HTTP/1.1" 401 None
+2018-07-09 12:56:37,887 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:37,895 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:37,898 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:37,900 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:37,902 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:37,904 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:39,431 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:40,156 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130206000&signature=0049cace6738d5eb4b1c16d53f1f002803382d49c090132051279f0d8d692d60 HTTP/1.1" 401 None
+2018-07-09 12:56:40,172 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:40,180 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:40,183 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:40,186 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:40,190 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:40,193 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:41,724 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:42,516 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130209000&signature=6cb6a2e3b51f9063f3220a6a03211a9b1777eaab3e90e337f9123bd7aa266916 HTTP/1.1" 401 None
+2018-07-09 12:56:42,539 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:42,548 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:42,551 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:42,553 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:42,556 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:42,558 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:44,102 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-09 12:56:44,834 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531130211000&signature=ef45edab53944cfe2f11acd69bb7380aac1edef7caab3cece82d037396991bd2 HTTP/1.1" 401 None
+2018-07-09 12:56:44,840 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-09 12:56:44,844 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-09 12:56:44,846 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-09 12:56:44,847 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-09 12:56:44,848 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-09 12:56:44,849 [DEBUG] Работаем с парой ETHBTC
+2018-07-09 12:56:46,378 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:46:44,814 [DEBUG] 
+    START
+    Текущее время: 2018-07-10 09:46:42  ~1531205202
+    Время сервера: 2018-07-10 09:46:45  ~1531205205
+    Разница: 3.00000000 
+    Бот будет работать, как будто сейчас: 2018-07-10 09:46:45 1531205205
+
+2018-07-10 09:46:44,832 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:46:44,834 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:46:44,835 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:46:44,837 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:46:44,838 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:46:46,385 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:46:47,056 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205206000&signature=40edcdec8f29c2532faac2b53b34ccbc12d9ae16c680f67f2b81ae460563237e HTTP/1.1" 401 None
+2018-07-10 09:46:47,147 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:46:47,151 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:46:47,153 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:46:47,154 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:46:47,155 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:46:47,156 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:46:48,685 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:46:49,365 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205209000&signature=fef38b604cbb6e32fd5ed20df482888541c398a60d500908c1f7160a301d9a33 HTTP/1.1" 401 None
+2018-07-10 09:46:49,386 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:46:49,394 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:46:49,398 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:46:49,400 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:46:49,404 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:46:49,406 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:46:50,940 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:46:52,056 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205211000&signature=588e9fc4142e75f4f4dceea72a4497025731b9e1f5d6e4742ebead8f4d517ca2 HTTP/1.1" 401 None
+2018-07-10 09:46:52,070 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:46:52,078 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:46:52,081 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:46:52,084 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:46:52,086 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:46:52,087 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:46:53,628 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:46:54,315 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205214000&signature=a06a184f66cb78a47eb80d2714fd7266ff69ac7990163e8db6112c87424d53dd HTTP/1.1" 401 None
+2018-07-10 09:46:54,336 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:46:54,341 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:46:54,343 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:46:54,346 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:46:54,350 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:46:54,352 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:46:55,867 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:46:56,579 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205216000&signature=a88b653fc61115b11141be3c77061a9291d995309b070980f6795152ed3fe462 HTTP/1.1" 401 None
+2018-07-10 09:46:56,600 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:46:56,611 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:46:56,614 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:46:56,617 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:46:56,619 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:46:56,621 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:46:58,165 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:46:58,870 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205218000&signature=92c078d9893fd0723ba7045385fd589399ab2c5360d60092a5171095a41da670 HTTP/1.1" 401 None
+2018-07-10 09:46:58,877 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:46:58,880 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:46:58,882 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:46:58,884 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:46:58,886 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:46:58,887 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:47:00,419 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:47:01,130 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205220000&signature=523790a6aac3e69995e48a69ae012c149e105ffbab1a69cb2ee48a1b47cb18bb HTTP/1.1" 401 None
+2018-07-10 09:47:01,148 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:47:01,156 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:47:01,158 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:47:01,160 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:47:01,163 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:47:01,164 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:47:02,680 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:47:03,377 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205223000&signature=8c0fa55f26199cc598e49dba2a208023c2ff77200307db3beba807e1f19ee603 HTTP/1.1" 401 None
+2018-07-10 09:47:03,397 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:47:03,404 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:47:03,407 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:47:03,409 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:47:03,413 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:47:03,418 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:47:04,949 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:47:05,639 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205225000&signature=c32280996a91da5f68ebc3c71b67fefb8711ef770b3b66fd554ecda707643ae6 HTTP/1.1" 401 None
+2018-07-10 09:47:05,649 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:47:05,656 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:47:05,658 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:47:05,659 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:47:05,662 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:47:05,664 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:47:07,189 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:47:07,878 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205227000&signature=b8c30387a104aff0a1023bcea5bae07d7fa5d438811d90843b98153555d51638 HTTP/1.1" 401 None
+2018-07-10 09:47:07,888 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:47:07,894 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:47:07,896 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:47:07,897 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:47:07,899 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:47:07,900 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:47:09,448 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:47:10,169 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205229000&signature=c490a83389ec487d43fdbd1b9c5c3fa99d5d6d38cb6c387f58ca79d2ed807d92 HTTP/1.1" 401 None
+2018-07-10 09:47:10,176 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:47:10,179 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:47:10,180 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:47:10,181 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:47:10,183 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:47:10,184 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:47:11,703 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:47:12,390 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205232000&signature=88a5d5c636992137720f7eac0ccdac3adf68ff54fd4dca9b9196eb134758da01 HTTP/1.1" 401 None
+2018-07-10 09:47:12,415 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:47:12,425 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:47:12,428 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:47:12,430 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:47:12,433 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:47:12,435 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:47:13,983 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:47:14,700 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205234000&signature=64b6e52a8784b14e11d70ba6fbcd59f567f25c28984ea132bac12a010cbb7c1d HTTP/1.1" 401 None
+2018-07-10 09:47:14,724 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:47:14,736 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:47:14,738 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:47:14,740 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:47:14,742 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:47:14,744 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:47:16,275 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:47:16,978 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205236000&signature=08c418def4a6eb0a45161c9ee09191a432066740a3e5ef041a4b6faf24f590fb HTTP/1.1" 401 None
+2018-07-10 09:47:16,986 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:47:16,989 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:47:16,991 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:47:16,993 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:47:16,995 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:47:16,996 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:47:22,171 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:47:23,866 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205238000&signature=5ee4b88baf2b72d095327ed31e28d37a7e309b1f69f86b5daf66388324b479e0 HTTP/1.1" 401 None
+2018-07-10 09:47:29,760 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:47:29,766 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:47:29,768 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:47:29,771 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:47:29,773 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:47:29,774 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:47:31,330 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:47:32,018 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205251000&signature=bf08585f3788f47c219fb426e4aa2ff27a31348fb01e482e84b25ada2a87ac10 HTTP/1.1" 401 None
+2018-07-10 09:47:32,035 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:47:32,042 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:47:32,046 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:47:32,049 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:47:32,053 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:47:32,056 [DEBUG] Работаем с парой ETHBTC
+2018-07-10 09:47:33,600 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-10 09:47:34,334 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531205254000&signature=82838c48b38aed1db1ae6d5e22b69faf89ad0fbcdf97922c4d2c4dc3682eef2b HTTP/1.1" 401 None
+2018-07-10 09:47:34,360 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-10 09:47:34,368 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-10 09:47:34,372 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-10 09:47:34,375 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-10 09:47:34,378 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-10 09:47:34,381 [DEBUG] Работаем с парой ETHBTC
+2018-07-11 13:28:36,517 [DEBUG] 
+    START
+    Текущее время: 2018-07-11 13:28:32  ~1531304912
+    Время сервера: 2018-07-11 13:28:37  ~1531304917
+    Разница: 5.00000000 
+    Бот будет работать, как будто сейчас: 2018-07-11 13:28:37 1531304917
+
+2018-07-11 13:28:36,538 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-11 13:28:36,539 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-11 13:28:36,541 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-11 13:28:36,542 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-11 13:28:36,544 [DEBUG] Работаем с парой ETHBTC
+2018-07-11 13:28:38,093 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-11 13:28:39,286 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531304920000&signature=664b6130f069928a5273e573f34350d1f2208bf33db4a4b5ba5a3bf1070c185d HTTP/1.1" 401 None
+2018-07-11 13:28:39,332 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-11 13:28:39,338 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-11 13:28:39,340 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-11 13:28:39,341 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-11 13:28:39,343 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-11 13:28:39,344 [DEBUG] Работаем с парой ETHBTC
+2018-07-11 13:28:40,861 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-11 13:28:41,584 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531304923000&signature=9ff5c6a682d3219be742b299fca80ccd9b8b0f153205a56050502a89f067a11a HTTP/1.1" 401 None
+2018-07-11 13:28:41,591 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-11 13:28:41,596 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-11 13:28:41,597 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-11 13:28:41,599 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-11 13:28:41,600 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-11 13:28:41,602 [DEBUG] Работаем с парой ETHBTC
+2018-07-11 13:28:43,140 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-11 13:28:43,837 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531304925000&signature=a60fb5c0cc343956e5b1e2b490aeb000c06dff78f1174b8254a9d8ca73d6ec12 HTTP/1.1" 401 None
+2018-07-11 13:28:43,854 [ERROR] {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+Traceback (most recent call last):
+  File "C:\Users\hohla\source\repos\bnb\bnb\bnb.py", line 352, in <module>
+    balance['asset']: float(balance['free']) for balance in bot.account()['balances']
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 47, in wrapper
+    return self.call_api(**kwargs)
+  File "C:\Users\hohla\source\repos\bnb\bnb\binance_api.py", line 75, in call_api
+    raise Exception(response.text)
+Exception: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2018-07-11 13:28:43,859 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-11 13:28:43,862 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-11 13:28:43,864 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-11 13:28:43,867 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-11 13:28:43,870 [DEBUG] Работаем с парой ETHBTC
+2018-07-11 13:28:45,395 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-11 13:28:46,129 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531304927000&signature=abe80c9db7746615518df8cf51c764c1165a48299eb55514af38cfb0551fa7b6 HTTP/1.1" 401 None
+2018-07-11 16:02:11,184 [DEBUG] 
+    START
+    Текущее время: 2018-07-11 16:01:53  ~1531314113
+    Время сервера: 2018-07-11 16:01:59  ~1531314119
+    Разница: 6.00000000 
+    Бот будет работать, как будто сейчас: 2018-07-11 16:01:59 1531314119
+
+2018-07-11 16:02:15,630 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-11 16:02:53,139 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-11 16:02:53,652 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-11 16:02:59,415 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-11 16:03:01,388 [DEBUG] Работаем с парой ETHBTC
+2018-07-11 16:03:09,129 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-11 16:03:10,225 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1531314192000&signature=1bf26ac40a4332059ca4f2b234985e450595b0323453ac8679180138d0e56830 HTTP/1.1" 200 None
+2018-07-11 16:03:29,063 [DEBUG] Баланс ['BTC:0.20311763', 'ETH:0.00000000']
+2018-07-11 16:03:36,304 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-11 16:03:37,051 [DEBUG] https://api.binance.com:443 "GET /api/v1/depth?symbol=ETHBTC&limit=5 HTTP/1.1" 200 None
+2018-07-11 16:04:22,084 [DEBUG] 
+                                Средняя цена 0.06939840, 
+                                после приведения 0.06939800, 
+                                объем после приведения 1.44000000,
+                                итоговый размер сделки 0.09993312
+                                
+2018-07-11 16:04:26,952 [DEBUG] Рассчитан ордер на покупку: кол-во 1.44000000, курс: 0.06939800
+2018-07-26 16:55:50,319 [DEBUG] 
+    START
+    Текущее время: 2018-07-26 16:55:36  ~1532613336
+    Время сервера: 2018-07-26 16:55:38  ~1532613338
+    Разница: 2.00000000 
+    Бот будет работать, как будто сейчас: 2018-07-26 16:55:38 1532613338
+
+2018-07-26 16:55:50,336 [DEBUG] Получаем все неисполненные ордера по БД
+2018-07-26 16:55:50,337 [DEBUG] Неисполненных ордеров в БД нет
+2018-07-26 16:55:50,338 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-07-26 16:55:50,340 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-07-26 16:55:50,341 [DEBUG] Работаем с парой ETHBTC
+2018-07-26 16:55:51,863 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-26 16:55:52,652 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1532613351000&signature=14ddc7267b44632a5c12a4ce0e43c2b6140a3ba95a960d0800817ec210889aea HTTP/1.1" 200 None
+2018-07-26 16:55:52,667 [DEBUG] Баланс ['BTC:0.20313903', 'ETH:0.00000000']
+2018-07-26 16:55:54,207 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-07-26 16:55:55,043 [DEBUG] https://api.binance.com:443 "GET /api/v1/depth?symbol=ETHBTC&limit=5 HTTP/1.1" 200 None
+2018-07-26 16:55:55,050 [DEBUG] 
+                                Средняя цена 0.05802240, 
+                                после приведения 0.05802200, 
+                                объем после приведения 1.72300000,
+                                итоговый размер сделки 0.09997191
+                                
+2018-07-26 16:55:55,052 [DEBUG] Рассчитан ордер на покупку: кол-во 1.72300000, курс: 0.05802200
+2018-08-01 08:50:21,907 [DEBUG] 
+    START
+    Текущее время: 2018-08-01 08:50:18  ~1533102618
+    Время сервера: 2018-08-01 08:50:24  ~1533102624
+    Разница: 6.00000000 
+    Бот будет работать, как будто сейчас: 2018-08-01 08:50:24 1533102624
+
+2018-08-01 08:50:21,923 [DEBUG] Получаем все неисполненные ордера по БД
+2018-08-01 08:50:21,923 [DEBUG] Неисполненных ордеров в БД нет
+2018-08-01 08:50:21,923 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-08-01 08:50:21,923 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-08-01 08:50:21,923 [DEBUG] Работаем с парой ETHBTC
+2018-08-01 08:50:23,454 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-08-01 08:50:24,345 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1533102626000&signature=9e7981f5ecc28fd9ade49af914e53fcac949d4ebfcc63c3f0e47fc1994ee2cb5 HTTP/1.1" 200 None
+2018-08-01 08:50:24,360 [DEBUG] Баланс ['BTC:0.20313903', 'ETH:0.00000000']
+2018-08-03 12:37:33,161 [DEBUG] 
+    START
+    Текущее время: 2018-08-03 12:37:30  ~1533289050
+    Время сервера: 2018-08-03 12:37:32  ~1533289052
+    Разница: 2.00000000 
+    Бот будет работать, как будто сейчас: 2018-08-03 12:37:32 1533289052
+
+2018-08-03 12:37:33,177 [DEBUG] Получаем все неисполненные ордера по БД
+2018-08-03 12:37:33,179 [DEBUG] Неисполненных ордеров в БД нет
+2018-08-03 12:37:33,180 [DEBUG] Получаем из настроек все пары, по которым нет неисполненных ордеров
+2018-08-03 12:37:33,181 [DEBUG] Найдены пары, по которым нет неисполненных ордеров: ['ETHBTC', 'BNBBTC', 'CNDBTC']
+2018-08-03 12:37:33,182 [DEBUG] Работаем с парой ETHBTC
+2018-08-03 12:37:34,719 [DEBUG] Starting new HTTPS connection (1): api.binance.com
+2018-08-03 12:37:35,502 [DEBUG] https://api.binance.com:443 "GET /api/v3/account?timestamp=1533289054000&signature=8c69adfd0a9ac0f48995b48b268241cfaa590f3f571581672f56935bcb4dc523 HTTP/1.1" 200 None
+2018-08-03 12:37:35,528 [DEBUG] Баланс ['BTC:0.20313903', 'ETH:0.00000000']
+2018-08-03 12:37:37,077 [DEBUG] Starting new HTTPS connection (1): api.binance.com

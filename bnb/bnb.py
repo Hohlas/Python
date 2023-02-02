@@ -10,8 +10,8 @@ from datetime import datetime
 
 from binance_api import Binance
 bot = Binance(
-    API_KEY='QbCjIsX4Tu4i4QmQziTxrBjJy6YNOxLvi0sEYKd8JlZV8E7bfaJMbrNgTnHqwuMz',
-    API_SECRET='G4r0HmbrUn4TjRKVXs6qonFCoDI8vKvgh3J7799GVj1TGtdrSW1VoSOwT6JBVYij'
+    API_KEY='ynooZT2ELyZx8ecEaAU0fmmJmqyrbD4vCD7hknbHl72E8092XFudI2jbKTaseRHm',
+    API_SECRET='nnlHnJx0JwusC30zXk1NDmiEdh7E57lG0kgKpyETXfUQgVAOD0tmHekgHS8CQgU4'
 )
 
 """
